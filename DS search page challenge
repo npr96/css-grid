@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<header>
+
+    <!--fonts-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"/>
+
+    <link href="Scss/search.css" rel="stylesheet">
+
+</header>
+
+<body>
+<div class="container">  
+    <div class="head-image">
+
+    <img src="images/ds_circle_logo.png">
+
+    </div>
+
+    <div class="search-container">
+    <div class="search-bar">
+
+        <div class="bar-div">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Search Daily Smarty">
+        </div>
+        <p>Press Return to Search</p>
+
+    </div>
+    </div>
+
+    <div class="add-row">
+        <div class="add-container">
+        
+        <h4>Recent Posts</h4>
+        <div class="add-wrapper">
+        <div class="add">
+
+            <p>Guide to rendering points on a Google Map</p>
+            <div class="subscript">JavaScript</div>
+
+        </div>
+
+        <div class="add">
+
+            <p>Guide to rendering points on a Google Map</p>
+            <div class="subscript">JavaScript</div>
+
+        </div>
+
+        <div class="add">
+
+            <p>Guide to rendering points on a Google Map</p>
+            <div class="subscript">JavaScript</div>
+
+        </div>
+
+        </div>
+        </div>
+        </div>
+</div>
+
+</body>
+
+</html>
