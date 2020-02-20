@@ -1,0 +1,126 @@
+$link-color: white;
+$text-color: black;
+$feature-color1: #34dbeb;
+@mixin link{
+    text-decoration: none;
+    color: $link-color;
+}
+
+@mixin flex($justify-content:false, $align-content:false){
+    display: flex;
+    @if $justify-content !=false{
+        justify-content: $justify-content;
+    }
+    @if $align-content !=false{
+        align-content: $align-content;
+    }
+}
+
+body{
+margin: 0px;
+font-family: 'Lacquer', sans-serif;
+.container{
+
+.header-wrapper{
+
+    @include flex($justify-content:space-between, $align-content:center);
+    height: 95px;
+    background-color: #34dbeb;
+    border-bottom: 8px solid #34dbeb;
+    position: fixed;
+    width: 100%;
+    
+    .logo-column{
+        padding: 15px;
+        padding-top: 31px;
+        padding-left: 25px;
+        img{
+            width: 150px;
+        }
+    }
+
+    .nav-column{
+        @include flex($align-content:center);
+        .links-wrapper{
+            padding: 35px;
+
+            a{
+                padding-left: 20px;
+                color: $text-color;
+                text-decoration: none;
+                
+            }
+        }
+
+    }
+
+}
+}
+}
+
+.first-content-div{
+    background-image: url(https://wallpapercave.com/wp/963aENk.jpg);
+    height: 800px;
+    margin-top: -25px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    .first-content-text{
+        padding-top: 200px;
+        padding-left: 85px;
+
+    h1{
+        background-color: darkorange;
+        width: 280px;
+        font-size: 24px;
+        border: 5px solid darkorange;
+        border-radius: 3px;
+        color: white;
+    }
+    .content{
+        background-color: darkorange;
+        width: fit-content;
+        font-size: 16px;
+        border: 5px solid darkorange;
+        border-radius: 3px;
+        color: white;
+    }
+    }
+
+}
+
+.second-content-div{
+    background-color: lightgrey;
+    @include flex($justify-content:center, $align-content:center);
+    width: 100%;
+    margin-top:-250px;
+}
+
+.footer-wrapper{
+    display: grid;
+    grid-template-rows: 4fr 1fr;
+    background-color: #34dbeb;
+    .links-wrapper{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        .row1{
+            @include flex($justify-content:space-between, $align-content:center);
+            padding: 20px;
+            padding-right: 200px;
+            padding-left: 200px;
+        }
+        .row2{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            padding-left: 200px;
+            padding-right: 200px;
+        }
+    }
+    .copywright{
+        display: flex;
+        justify-content: center;
+    }
+}
