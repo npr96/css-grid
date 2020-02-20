@@ -1,0 +1,18 @@
+.container{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 100vw;
+    height: 1000px;
+
+    .square-center{
+        grid-area: 2/2/6/5;
+    }
+
+    .square{
+        text-align: center;
+        border: 2px solid black;
+    }
+
+}
