@@ -1,0 +1,117 @@
+<!--Homework 2/18/2020:
+
+Build out an HTML/SCSS project.
+
+ -Have at least one page.
+
+ -Has a nav bar (does not have to be functional, but must at least look like it would work).
+
+ -Has a footer that has at least 6 links.
+
+ -Has a non standard font, (so an import from google fonts for example.)
+
+ -Uses at least 1 icon ( Font awesome or other ).
+
+ -Has at least 2 images.
+
+ -Uses Flex box at least once.
+
+ -Uses at least 1 scss mixin.
+
+ -Uses at least 1 scss variable.
+
+Go nuts have fun try things! If you are breaking reach out for some help, and have fun working on it. 
+
+Get started on the Grid Gardens Game:
+https://cssgridgarden.com/
+
+You don't have to finish the game tonight, but it is short and it's a great way to solidify css grid concepts. 
+
+Good Luck!-->
+
+<!DOCTYPE html>
+<html>
+
+<header>
+
+<link href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" rel="stylesheet">
+<link href="Scss/stylepreview.css" rel="stylesheet">
+<link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+  integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+  crossorigin="anonymous"
+/>
+
+</header>
+
+<body>
+
+<div class="container">
+
+    <div class="header-wrapper">
+
+        <div class="logo-column">
+
+            <img src="images/zero/ZeroBarriersInc_Logo_Web_sm.png" alt="logo">
+
+        </div>
+
+        <div class="nav-column">
+
+            <div class="links-wrapper">
+
+                <a href="#">About Us</a>
+                <a href="#">Stories</a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fas fa-search"></i></a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="content-wrapper">
+
+        <!--Content pulled from https://zerobarriersinc.com/-->
+        <div class="first-content-div">
+
+            <!--Image pulled from https://wallpapercave.com/rocky-mountain-national-park-wallpaper-->
+            <div class="first-content-text">
+            <h1>Helping Businesses Engineer their Success</h1>
+            <div class="content">Our clients enjoy greater success and growth as a result of our principled and strategic process.</div>
+            </div>
+        </div>
+
+        <div class="second-content-div">
+            <iframe width="900" height="490" src="https://www.youtube.com/embed/QgH3cjTnwaw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+        </div>
+
+    </div>
+
+    <div class="footer-wrapper">
+        <div class="links-wrapper">
+            <div class="row1">
+            <a href="#">link 1</a>
+            <a href="#">link 2</a>
+            <a href="#">link 3</a>
+            </div>
+            <div class="row2">
+            <a href="#">link 4</a>
+            <a href="#">link 5</a>
+            <a href="#">link6</a>
+            </div>
+        </div>
+        <div class="copywright">
+            OwO owiginal content pws no steal
+        </div>
+    </div>
+
+</div>
+
+</body>
+
+</html>
