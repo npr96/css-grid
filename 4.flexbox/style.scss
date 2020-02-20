@@ -1,3 +1,19 @@
 body{
     margin: 0px;
+    background-color: lightgoldenrodyellow;
+    font-family: "Merriweather", sans-serif;
+}
+
+.error-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    .error-header{
+        margin-bottom: 42px;
+    }
+    .tbot-image{
+        width: 50%;
+    }
 }
