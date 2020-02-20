@@ -11,3 +11,12 @@ gulp.task('serve', function(){
 
     gulp.watch("*.html").on("change", reload)
 });
+gulp.task('serve2', function(){
+    browserSync.init({
+        server: {
+            baseDir: "./"
+        }
+    });
+
+    gulp.watch("*.scss").on("change", reload)
+});
