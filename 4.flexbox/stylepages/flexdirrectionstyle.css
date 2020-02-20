@@ -12,10 +12,27 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-.container > .img_blocks {
+.container .image-blocks {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+}
+.container .image-blocks .box1 {
+  background-color: teal;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  flex-grow: 2;
+}
+.container .image-blocks .box2 {
+  background-color: teal;
+  height: 200px;
+  width: 200px;
+}
+.container .image-blocks .box3 {
+  background-color: teal;
+  height: 200px;
+  width: 200px;
 }
 
 /*# sourceMappingURL=flexdirrectionstyle.css.map */

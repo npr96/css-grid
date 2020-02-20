@@ -10,8 +10,28 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  .image-blocks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .box1{
+      background-color: teal;
+      height: 200px;
+      width: 200px;
+      display: flex;
+      flex-grow: 2;
+    }
+    .box2{
+      background-color: teal;
+      height: 200px;
+      width: 200px;
+    }
+    .box3{
+      background-color: teal;
+      height: 200px;
+      width: 200px;
+    }
 }
-.container > .img_blocks {
-  display: flex;
-  flex-direction: row;
 }
+
