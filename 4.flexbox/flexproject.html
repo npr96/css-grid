@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"/>
+    <title>Flexbox Capstone</title>
+    <style>
+    body{
+        margin: 0px;
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        background-color: lightblue;
+        height: 100px;
+        justify-content: center;
+    }
+    .left{
+        display: flex;
+        justify-self: left;
+        align-self: center;
+        justify-content: left;
+        align-items: center;
+        width: 80%;
+        
+    }
+    .logo img{
+        width: 100px;
+    }
+    .link3{
+        width: 20%;
+        align-self: center;
+        justify-self: right;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: flex-end;    
+    }
+    .link3wrapper{
+        width: 20vw;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 40px;
+    }
+    img{
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+    .dropdown{
+        display: none;
+        justify-self: flex-start;
+        /* margin-top: 100px; */
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        max-width: 300px;
+    }
+    .dropdown a{
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .d{       
+        position: relative;
+        display: inline-block;
+    }
+    .icon{
+        width: 100px;
+    }
+    a {
+        height: 100px;
+        /* padding-left: 40px;
+        padding-right: 40px;  */
+        display: flex;
+        align-items: center;
+        width: 100px;
+        justify-content: center;
+    }
+    a:hover{
+        color: white;
+        background-color: blue;
+    }
+    button{
+        height: 100px;
+        border: none;
+        background-color: lightblue;
+        font-size: 3em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    button :hover{
+        color: white;
+        background-color: blue;
+        position: fixed;
+        top:0;
+        left: 0; 
+        height: 100px;
+        width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .hide{
+        display: flex;
+        align-items: center;
+    }
+    .hide2{
+        display: flex;
+        align-items: center;
+    }
+    @media (max-width: 700px){
+        .hide2{
+            visibility: hidden;
+        }
+        .link3{
+            visibility: hidden;
+        }
+        .hide{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .left{
+            display: flex;
+            justify-content: space-between;
+            justify-self: center;
+        }
+        .show{display:block;}
+        
+        
+    }
+    .even-bigger-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 3fr;
+        height: 400px;
+    }
+
+
+    </style>
+    <script>
+        function myFunction(){
+    document.getElementById("dc").classList.toggle("show");
+}
+    </script>
+</head>
+<body>
+    <div class="even-bigger-container">
+    <div class="container">
+        <div class="left">
+        <div class="hide">
+        <button class="icon" onclick="myFunction()">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="logo">
+            <img src="images/ZeroBarriersInc_Logo_Web_sm.png" alt="logo">
+        </div>
+        </div>
+        <div class="hide2">
+        <div class="link1">
+            <a href="#">Link 1</a>
+        </div>
+        <div class="link2">
+            <a href="#">Link 2</a>
+        </div>
+        </div>
+        </div>
+        <div class="link3">
+            <div class="link3wrapper">
+             <a href="#">Link 3</a>
+             <a href="#">Link 4</a>
+            </div>
+        </div>
+        <!-- <div class="d">
+        <div class="dropdown" id="dc">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+        </div>
+        </div> -->
+    </div>
+    <div class="d">
+        <div class="dropdown" id="dc">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
