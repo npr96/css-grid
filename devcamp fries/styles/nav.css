@@ -1,0 +1,121 @@
+/* common nav styles*/
+.nav-styles {
+    height: 190px;
+    background-color: #11122b;
+    color: #cbcbcb;
+    /* Flexbox container*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 100px;
+}
+
+.nav-styles > .left-column{
+    display: flex;
+    align-items:center;
+}
+
+.left-column > .contact-hours-wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap:10px
+}
+
+.nav-styles > .left-column> .icon{
+    margin-right: 15px;
+}
+.nav-styles > .left-column> .icon i{
+    font-size: 2em;
+}
+.nav-styles > .left-column > .contact-hours-wrapper > .phone{
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.nav-styles > .left-column > .contact-hours-wrapper > .hours{
+font-family: "Ubuntu Condensed" , sans-serif;
+color: #858585;
+font-size: 0.8em;
+}
+
+.link-wrapper > .nav-link a{
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.nav-styles > .center-column{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 42px;
+    width: 500px;
+}
+.nav-styles > .center-column > .banner-image{
+display: flex;
+justify-content: center;
+}
+.nav-styles > .center-column > .banner-image img{
+    width: 216px;
+    height: 100%;
+}
+
+.link-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link-wrapper > .nav-link a {
+font-family: "Ubuntu Condensed", sans-serif;
+color: #cbcbcb;
+text-decoration: none;
+transition: 0.5s;
+}
+
+.link-wrapper > .nav-link a:hover{
+    color: #cea135;
+    letter-spacing: 2px;
+}
+
+.link-wrapper > .nav-link{
+    width: 70px;
+    text-align: center;
+}
+
+/*right column*/
+.nav-styles > .right-column{
+    font-family: "Ubuntu Condensed", sans-serif;
+    
+    }
+
+    .nav-styles > .right-column > .contact-icon{
+        margin-left: 15px;
+        font-size: 2em;
+    }
+    .nav-styles > .right-column > .adress-wrapper{
+        font-family: "Ubuntu Condensed", sans-serif;
+        text-align: center;
+        }
+    
+    .nav-styles > .right-column > .adress-wrapper a{
+       color: #858585;
+       text-decoration: none;
+       font-size: 0.9em;
+       transition: 0.5s;
+            }
+    .nav-styles > .right-column > .adress-wrapper a:hover{
+        color: #cea135;
+        text-decoration: none;
+        font-size: 0.9em;
+        transition: 0.5s;
+        
+        }
+.nav-styles > .right-column > .contact-icon a{
+    color: #cbcbcb;
+    transition: 0.5s;
+}
+.nav-styles > .right-column > .contact-icon a:hover{
+    color: #cea135;
+    transition: 0.5s;
+}
+.nav-styles > .right-column{
+    display: flex;
+    align-items: center;
+} 
